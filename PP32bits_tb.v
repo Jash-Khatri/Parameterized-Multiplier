@@ -1,21 +1,23 @@
 `include "PP.v"
 
 module testbench;
-reg [15:0]a,b;
-wire [32:0]r1;
+reg [31:0]a,b;
+wire [64:0]r1;
 wire cout;
 
 initial  //Apply Inputs
 begin
 	#1
-	a= 12 ;b=16;
-	#100
-	a= 3801 ;b=1332;
-	#100
+	a= 1201 ;b=1621;
+	#200
+	a= 127 ;b=65535;
+	#200
+	a= 4294967295 ;b=4294967295;
+	#200
+	a= 0 ;b=4294967295;
+	#200
 	a= 65535 ;b=65535;
-	#100
-	a= 0 ;b=65535;
-	#100
+	#200
 	$finish;
 end
 
