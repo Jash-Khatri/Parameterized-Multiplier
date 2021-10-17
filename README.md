@@ -5,7 +5,7 @@
 • The code will ask the user to input the value of N and K when the user runs ./a.out. For N, you can enter any value in the power of 2. For K (>0), enter any value greater than zero, not necessarily in the powers of 2.
   
 <p align="center">
-g++ **Multiplier\_gen\_pipeline.cpp**  
+g++ **Multiplier\_gen\_pipeline.cpp**
 ./a.out  
 8 2  
 </p>
