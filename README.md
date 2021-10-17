@@ -6,20 +6,19 @@ This repository contains the project done on Parameterized and Pipelined Wallace
 
 - Run the following commands to generate the N-bit Wallace tree multiplier circuit (with isolation register stage after every K stages) in Verilog from the C++ code. Note the file Multiplier\_gen\_pipeline.cpp is present in the Code directory
 
-- The code will ask the user to input the value of N and K when the user runs ./a.out. For N, you can enter any value in the power of 2. For K (>0), enter any value greater than zero, not necessarily in the powers of 2.
-
     g++ **Multiplier\_gen\_pipeline.cpp**  
     ./a.out  
     8 2  
 
+- The code will ask the user to input the value of N and K when the user runs ./a.out. For N, you can enter any value in the power of 2. For K (>0), enter any value greater than zero, not necessarily in the powers of 2.
 
 - After running the above commands, the **multiplier.v** file will be generated in the current directory, which is the Verilog file for the N-bit Wallace tree multiplier circuit (with isolation register stage after every K stages). N is 8, and K is 2 in this case.
 
 - In order to run the generated Verilog files using the test benches to see the multiplication results, use the following commands.
 
-iverilog multiplier.v  
-iverilog **multiplier\_tb.v**  
-./a.out
+    iverilog multiplier.v  
+    iverilog **multiplier\_tb.v**  
+    ./a.out
 
 - **Note:** Carry Lookahead Adder is not pipelined while adding the pipeline stages. The pipeline stages are only added to the CSA tree.
 
