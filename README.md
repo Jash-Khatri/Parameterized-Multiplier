@@ -8,9 +8,9 @@ This repository contains the project done on Parameterized and Pipelined Wallace
 
 - The code will ask the user to input the value of N and K when the user runs ./a.out. For N, you can enter any value in the power of 2. For K (>0), enter any value greater than zero, not necessarily in the powers of 2.
 
-g++ **Multiplier\_gen\_pipeline.cpp**  
-./a.out  
-8 2  
+    g++ **Multiplier\_gen\_pipeline.cpp**  
+    ./a.out  
+    8 2  
 
 
 - After running the above commands, the **multiplier.v** file will be generated in the current directory, which is the Verilog file for the N-bit Wallace tree multiplier circuit (with isolation register stage after every K stages). N is 8, and K is 2 in this case.
