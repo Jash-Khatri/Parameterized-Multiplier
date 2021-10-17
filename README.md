@@ -47,3 +47,8 @@ C++, Verilog
 - This is intuitive because for K=1, we add the register stage after every CSA stage, while for K=4 we add the register stage only after every four register stages. Hence the number of the register should decrease as K increases.
 
 ![alt text](https://github.com/Jash-Khatri/Parameterized-Multiplier/blob/main/fig2.png)
+
+- Above figure show the change in the execution time for different values of K.
+- For K=1,2,3 CLA with the delay of 24 units will become the bottleneck for the pipelined multiplier. Hence, the time period of the clock is set to 24 units.
+- For K=4, CLA, and all 4 stages of the CSA tree are separated by the register stage. In this case, the delay in processing the input from the CSA tree(30 units) will be more than the delay of CLA (24 units). Hence, the clock is set to 30 units.
+- For K=5 or above, we will not have any register stage as the K value exceeds the number of CSA stages. So, in this case we do not need to set the time period of the clock. In this cases, each multiplication operation may take as much as 60 units in worst case. 
