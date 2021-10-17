@@ -40,5 +40,5 @@ C++, Verilog
 
 **Comparative Analysis for different values of K**
 
-![alt text](https://github.com/Jash-Khatri/Parameterized-Multiplier/fig1.png)
-![alt text](https://github.com/Jash-Khatri/Parameterized-Multiplier/fig2.png)
+![alt text](https://github.com/Jash-Khatri/Parameterized-Multiplier/blob/main/fig1.png)
+![alt text](https://github.com/Jash-Khatri/Parameterized-Multiplier/blob/main/fig2.png)
