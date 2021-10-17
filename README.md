@@ -41,4 +41,9 @@ C++, Verilog
 **Comparative Analysis for different values of K**
 
 ![alt text](https://github.com/Jash-Khatri/Parameterized-Multiplier/blob/main/fig1.png)
+
+- Above figure show the number of isolation registers needed for different values of K.
+- The above figure tells us that as the value of K (from 1 to 5 in this case) increases, the number of 1-bit registers needed to implement the pipeline reduces.
+- This is intuitive because for K=1, we add the register stage after every CSA stage, while for K=4 we add the register stage only after every four register stages. Hence the number of the register should decrease as K increases.
+
 ![alt text](https://github.com/Jash-Khatri/Parameterized-Multiplier/blob/main/fig2.png)
